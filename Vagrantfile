@@ -1,6 +1,11 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
 
+# Number of master and worker nodes for Kubernetes cluster
 M = 1
 W = 2
+
+# Host-only network for internal k8s communication. This will create a new Virtualbox private_network with below subnet/24
 IP_NW = "192.168.57."
 
 Vagrant.configure("2") do |config|
